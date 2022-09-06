@@ -1,0 +1,329 @@
+<!-- Variables -->
+{{ $slider_1_image := "/images/home-image-slider-1.jpg" }}
+{{ $slider_2_image := "/images/home-image-slider-2.jpg" }}
+{{ $slider_3_image := "/images/home-image-slider-3.jpg" }}
+{{ $section_2_image := "/images/headshot.jpg" }}
+{{ $section_3_image := "/images/our-services-image.jpg" }}
+{{ $testimonial_slider_image_1 := "/images/testimonials 1.jpg"}}
+{{ $testimonial_slider_image_2 := "/images/testimonials 2.jpg"}}
+{{ $testimonial_slider_image_3 := "/images/testimonials 3.jpg"}}
+{{ $staff_image_1 := "/images/Trainer-1.jpg" }}
+{{ $staff_image_2 := "/images/Trainer-2.jpg" }}
+{{ $staff_image_3 := "/images/Trainer-3.jpg" }}
+{{ $staff_image_4 := "/images/Trainer-4.jpg" }}
+<!-- Variables end -->
+
+<section>
+            <div class="swiper-container swiper-slider swiper-variant-1 bg-black" data-loop="true" data-autoplay="5000" data-simulate-touch="true">
+                <div class="swiper-wrapper text-center">
+                    <div class="swiper-slide overlay-5" data-slide-bg="{{$slider_1_image}}">
+                        <div class="swiper-slide-caption">
+                            <div class="container">
+                                <div class="row row-fix justify-content-md-center">
+                                    <div class="col-md-11 col-lg-10 col-xl-9">
+                                        <div class="shilder-header-with-divider" data-caption-animate="fadeInUp" data-caption-delay="0s">{{.Get `slider_1_text`}}</div>
+                                        <h2 class="slider-header" data-caption-animate="fadeInUp" data-caption-delay="100s">{{.Get `slider_1_text_2`}}<br>{{.Get `slider_1_text_3`}}</h2><a class="button button-icon button-icon-right button-primary big" data-caption-animate="fadeInUp" data-caption-delay="250" href="/get_started"><span class="icon icon-xs fa-angle-right"></span>{{.Get `slider_1_button`}}</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide overlay-5" data-slide-bg="{{$slider_2_image}}">
+                        <div class="swiper-slide-caption">
+                            <div class="container">
+                                <div class="row row-fix justify-content-md-center">
+                                    <div class="col-xl-1 d-none d-xl-inline-block d-xxl-none"></div>
+                                    <div class="col-md-11 col-lg-10 col-xl-9">
+                                        <h2 class="slider-header" data-caption-animate="fadeInUp" data-caption-delay="0s">{{.Get `slider_2_text`}}<br>{{.Get `slider_2_text_2`}}</h2>
+                                        <p class="text-bigger text-regular slider-text" data-caption-animate="fadeInUp" data-caption-delay="100">{{.Get `slider_2_text_3`}}</p><a class="button button-icon button-icon-right button-primary big" data-caption-animate="fadeInUp" data-caption-delay="250" href="/get_started"><span class="icon icon-xs fa-angle-right"></span>{{.Get `slider_2_button`}}</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide overlay-5" data-slide-bg="{{$slider_3_image}}">
+                        <div class="swiper-slide-caption">
+                            <div class="container">
+                                <div class="row row-fix justify-content-md-center">
+                                    <div class="col-md-11 col-lg-10 col-xl-9">
+                                        <div class="shilder-header-with-divider" data-caption-animate="fadeInUp" data-caption-delay="0s">{{.Get `slider_3_text`}}</div>
+                                        <h2 class="slider-header" data-caption-animate="fadeInUp" data-caption-delay="100s">{{.Get `slider_3_text_2`}}<br><br>{{.Get `slider_3_text_3`}}</h2><a class="button button-icon button-icon-right button-primary big" data-caption-animate="fadeInUp" data-caption-delay="250" href="#testimonials"><span class="icon icon-xs fa-angle-right"></span>{{.Get `slider_3_button`}}</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+        <section class="section-60 section-md-80 section-lg-90 section-lg-top-30 section-lg-bottom-0 novi-background">
+            <div class="container">
+                <div class="row row-fix justify-content-md-center justify-content-lg-start">
+                    <div class="col-md-6 col-md-6 col-xl-5 text-secondary section-lg-60 section-lg-bottom-90">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <h3 class="mb-30">{{.Get `section_2_title`}}</h3>
+                            </div>
+                        </div>
+                        <div class="inset-md-right-15 inset-xl-right-0">
+                            <p>{{.Get `section_2_content_paragraph_1`}}</p>
+                            <p>{{.Get `section_2_content_paragraph_2`}}</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 offset-lg-1 d-none d-lg-flex align-items-end"><img src="{{$section_2_image}}" alt="" width="446" height="608"></div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="section parallax-container bg-black" data-parallax-img="{{$section_3_image}}">
+                <div class="parallax-content">
+                    <div class="section-60 section-md-80 section-lg-90 context-dark section-bordered-inside overlay-8">
+                        <div class="container">
+                            <div class="text-center">
+                                <h3>{{.Get `section_3__title`}}</h3>
+                                <p class="block-centered text-white-05" style="max-width: 540px;">{{.Get `section_3_subtitle`}}</p>
+                            </div>
+                            <div class="row row-50">
+                                <div class="col-sm-6 col-lg-4">
+                                    <article class="icon-box-vertical icon-box-vertical-sm">
+                                        <div class="unit flex-column text-center unit-spacing-sm">
+                                            <div class="unit-center"><span class="novi-icon icon icon-primary icon-lg-bigger mercury-icon-chart-up-2"></span></div>
+                                            <div class="unit-body">
+                                                <h5>{{.Get `section_3_topLeft_title`}}</h5>
+                                                <p class="text-white-05">{{.Get `section_3_topLeft_content`}}</p>
+                                            </div>
+                                        </div>
+                                    </article>
+                                </div>
+                                <div class="col-sm-6 col-lg-4">
+                                    <article class="icon-box-vertical icon-box-vertical-sm">
+                                        <div class="unit flex-column text-center unit-spacing-sm">
+                                            <div class="unit-left"><span class="novi-icon icon icon-primary icon-lg-bigger mercury-icon-group"></span></div>
+                                            <div class="unit-body">
+                                                <h5>{{.Get `section_3_topCenter_title`}}</h5>
+                                                <p class="text-white-05">{{.Get `section_3_topCenter_content`}}</p>
+                                            </div>
+                                        </div>
+                                    </article>
+                                </div>
+                                <div class="col-sm-6 col-lg-4">
+                                    <article class="icon-box-vertical icon-box-vertical-sm">
+                                        <div class="unit flex-column text-center unit-spacing-sm">
+                                            <div class="unit-left"><span class="novi-icon icon icon-primary icon-lg-bigger mercury-icon-screen"></span></div>
+                                            <div class="unit-body">
+                                                <h5>{{.Get `section_3_topRight_title`}}</h5>
+                                                <p class="text-white-05">{{.Get `section_3_topRight_content`}}</p>
+                                            </div>
+                                        </div>
+                                    </article>
+                                </div>
+                                <div class="col-sm-6 col-lg-4">
+                                    <article class="icon-box-vertical icon-box-vertical-sm">
+                                        <div class="unit flex-column text-center unit-spacing-sm">
+                                            <div class="unit-left"><span class="novi-icon icon icon-primary icon-lg-bigger mercury-icon-briefcase"></span></div>
+                                            <div class="unit-body">
+                                                <h5>{{.Get `section_3_bottomLeft_title`}}</h5>
+                                                <p class="text-white-05">{{.Get `section_3_bottomLeft_content`}}</p>
+                                            </div>
+                                        </div>
+                                    </article>
+                                </div>
+                                <div class="col-sm-6 col-lg-4">
+                                    <article class="icon-box-vertical icon-box-vertical-sm">
+                                        <div class="unit flex-column text-center unit-spacing-sm">
+                                            <div class="unit-left"><span class="novi-icon icon icon-primary icon-lg-bigger mercury-icon-presentation-3"></span></div>
+                                            <div class="unit-body">
+                                                <h5>{{.Get `section_3_bottomCenter_title`}}</h5>
+                                                <p class="text-white-05">{{.Get `section_3_bottomCenter_content`}}</p>
+                                            </div>
+                                        </div>
+                                    </article>
+                                </div>
+                                <div class="col-sm-6 col-lg-4">
+                                    <article class="icon-box-vertical icon-box-vertical-sm">
+                                        <div class="unit flex-column text-center unit-spacing-sm">
+                                            <div class="unit-left"><span class="novi-icon icon icon-primary icon-lg-bigger mercury-icon-money"></span></div>
+                                            <div class="unit-body">
+                                                <h5>{{.Get `section_3_bottomRight_title`}}</h5>
+                                                <p class="text-white-05">{{.Get `section_3_bottomRight_content`}}</p>
+                                            </div>
+                                        </div>
+                                    </article>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section-60 section-md-80 section-lg-90 section-xl-bottom-90 bg-whisperapprox novi-background bg-cover">
+            <div class="container">
+                <div style="display: flex; flex-direction: column; align-items: center;">
+                    <div style="border: 2px solid transparent;" style="text-align: center;">
+                        <h3>{{.Get `section_4_title`}}</h3>
+                        <div class="inset-lg-left-0">
+                            <ul class="list-xl">
+                                <li>
+                                    <article class="icon-box-horizontal">
+                                        <div class="unit flex-row unit-spacing-md">
+                                            <div class="unit-left"><span class="icon novi-icon icon-primary icon-lg mercury-icon-chart-up"></span></div>
+                                            <div class="unit-body">
+                                                <h5>{{.Get `section_4_subtitle_top`}}</h5>
+                                                <p class="text-gray-05">{{.Get `section_4_content_top`}}</p>
+                                            </div>
+                                        </div>
+                                    </article>
+                                </li>
+                                <li>
+                                    <article class="icon-box-horizontal">
+                                        <div class="unit flex-row unit-spacing-md">
+                                            <div class="unit-left"><span class="icon novi-icon icon-primary icon-lg mercury-icon-note-2"></span></div>
+                                            <div class="unit-body">
+                                                <h5>{{.Get `section_4_subtitle_middle`}}</h5>
+                                                <p class="text-gray-05">{{.Get `section_4_content_middle`}}</p>
+                                            </div>
+                                        </div>
+                                    </article>
+                                </li>
+                                <li>
+                                    <article class="icon-box-horizontal">
+                                        <div class="unit flex-row unit-spacing-md">
+                                            <div class="unit-left"><span class="icon novi-icon icon-primary icon-lg mercury-icon-document-search"></span></div>
+                                            <div class="unit-body">
+                                                <h5>{{.Get `section_4_subtitle_bottom`}}</h5>
+                                                <p class="text-gray-05">{{.Get `section_4_content_bottom`}}</p>
+                                            </div>
+                                        </div>
+                                    </article>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section-60 section-md-80 section-lg-90 section-xl-bottom-90  novi-background bg-cover">
+            <div class="container">
+                <h3 id="testimonials" style="text-align: center;">{{.Get `section_5_title`}}</h3>
+                <div class="row row-40 row-fix">
+                        <div class="owl-carousel owl-nav-bottom-left" data-items="1" data-stage-padding="0" data-loop="true" data-margin="30" data-mouse-drag="false" data-nav="true" data-animation-in="fadeIn" data-animation-out="fadeOut">
+                            <div class="item" style="display: flex; flex-direction: column; align-items: center;">
+                                <img src="{{$testimonial_slider_image_1}}" style="max-height: 350px; width: auto;">
+                                <h4 style="text-align: center;">"{{.Get `section_5_testimonial_1`}}"</h4>
+                            </div>
+                            <div class="item" style="display: flex; flex-direction: column; align-items: center;">
+                                <img src="{{$testimonial_slider_image_2}}" style="max-height: 350px; width: auto;">
+                                <h4 style="text-align: center;">"{{.Get `section_5_testimonial_2`}}"</h4>
+                            </div>
+                            <div class="item" style="display: flex; flex-direction: column; align-items: center;">
+                                <img src="{{$testimonial_slider_image_3}}" style="max-height: 350px; width: auto;">
+                                <h4>"{{.Get `section_5_testimonial_3`}}"</h4>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="section parallax-container bg-black" data-parallax-img="images/clients-testimonials-parallax-1.jpg">
+                <div class="parallax-content">
+                    <div class="overlay-9">
+                        <div class="container text-center section-60 section-md-80 section-lg-90 section-xl-90">
+                            <h3>{{.Get `section_6_title`}}</h3>
+                            <div class="row row-fix justify-content-lg-center">
+                                <div class="col-lg-11 col-xl-9">
+                                    <div class="owl-carousel-inverse">
+                                        <div class="owl-carousel owl-nav-position-numbering" data-items="1" data-stage-padding="0" data-loop="false" data-margin="30" data-nav="true" data-numbering="#owl-numbering-1" data-animation-in="fadeIn" data-animation-out="fadeOut">
+                                            <div class="item">
+                                                <blockquote class="quote-minimal quote-minimal-inverse">
+                                                    <div class="quote-body">
+                                                        <p><q>{{.Get `section_6_content`}}</q></p>
+                                                    </div>
+                                                </blockquote>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section novi-bg novi-bg-img bg-decoration-wrap bg-decoration-bottom section-bottom-60 section-xl-top-90 section-xl-bottom-90 bg-gray-lighter">
+            <div class="container bg-decoration-content">
+                <h3>{{.Get `section_7_title`}}</h3>
+                <!-- Calendly inline widget begin -->
+                <div class="calendly-inline-widget" data-url="https://calendly.com/webnertia/strategy" style="height:630px;"></div>
+                <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+                <!-- Calendly inline widget end -->
+            </div>
+            <div class="bg-decoration-object bg-whisper novi-bg novi-bg-img"></div>
+        </section>
+        <section class="section-60 section-md-80 section-lg-90 section-md-bottom-90 bg-default novi-background bg-cover">
+            <div class="container text-center">
+                <h3>{{.Get `section_8_title`}}</h3>
+                <div class="row row-40 row-offset-6 justify-content-sm-center">
+                    <div class="col-sm-8 col-md-5 col-lg-3">
+                        <div class="team-boxed d-xl-inline-block">
+                            <div class="team-boxed-img-wrap"><a href="/get_started"><img src="{{$staff_image_1}}" alt="" width="246" height="190"></a></div>
+                            <div class="team-boxed-caption text-center">
+                                <div class="team-boxed-title font-weight-bold"><a href="/get_started">{{.Get `section_8_nameLeft`}}</a></div>
+                                <p class="position">{{.Get `section_8_titleLeft`}}</p>
+                                <ul class="team_expert mt-20 list-inline-reset">
+                                    <li><a class="novi-icon icon icon-round icon-pciked-bluewood icon-xxs-smallest fa fa-facebook" href="/get_started"></a></li>
+                                    <li><a class="novi-icon icon icon-round icon-pciked-bluewood icon-xxs-smallest fa fa-twitter" href="/get_started"></a></li>
+                                    <li><a class="novi-icon icon icon-round icon-pciked-bluewood icon-xxs-smallest fa fa-google-plus" href="/get_started"></a></li>
+                                    <li><a class="novi-icon icon icon-round icon-pciked-bluewood icon-xxs-smallest fa-pinterest-p fa" href="/get_started"></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-8 col-md-5 col-lg-3">
+                        <div class="team-boxed d-xl-inline-block">
+                            <div class="team-boxed-img-wrap"><a href="/get_started"><img src="{{$staff_image_2}}" alt="" width="246" height="190"></a></div>
+                            <div class="team-boxed-caption text-center">
+                                <div class="team-boxed-title font-weight-bold"><a href="/get_started">{{.Get `section_8_nameLeftCenter`}}</a></div>
+                                <p class="position">{{.Get `section_8_titleLeftCenter`}}</p>
+                                <ul class="team_expert mt-20 list-inline-reset">
+                                    <li><a class="novi-icon icon icon-round icon-pciked-bluewood icon-xxs-smallest fa fa-facebook" href="/get_started"></a></li>
+                                    <li><a class="novi-icon icon icon-round icon-pciked-bluewood icon-xxs-smallest fa fa-twitter" href="/get_started"></a></li>
+                                    <li><a class="novi-icon icon icon-round icon-pciked-bluewood icon-xxs-smallest fa fa-google-plus" href="/get_started"></a></li>
+                                    <li><a class="novi-icon icon icon-round icon-pciked-bluewood icon-xxs-smallest fa-pinterest-p fa" href="/get_started"></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-8 col-md-5 col-lg-3">
+                        <div class="team-boxed d-xl-inline-block">
+                            <div class="team-boxed-img-wrap"><a href="/get_started"><img src="{{$staff_image_3}}" alt="" width="246" height="190"></a></div>
+                            <div class="team-boxed-caption text-center">
+                                <div class="team-boxed-title font-weight-bold"><a href="/get_started">{{.Get `section_8_nameRightCenter`}}</a></div>
+                                <p class="position">{{.Get `section_8_titleRightCenter`}}</p>
+                                <ul class="team_expert mt-20 list-inline-reset">
+                                    <li><a class="novi-icon icon icon-round icon-pciked-bluewood icon-xxs-smallest fa fa-facebook" href="/get_started"></a></li>
+                                    <li><a class="novi-icon icon icon-round icon-pciked-bluewood icon-xxs-smallest fa fa-twitter" href="/get_started"></a></li>
+                                    <li><a class="novi-icon icon icon-round icon-pciked-bluewood icon-xxs-smallest fa fa-google-plus" href="/get_started"></a></li>
+                                    <li><a class="novi-icon icon icon-round icon-pciked-bluewood icon-xxs-smallest fa-pinterest-p fa" href="/get_started"></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-8 col-md-5 col-lg-3">
+                        <div class="team-boxed d-xl-inline-block">
+                            <div class="team-boxed-img-wrap"><a href="/get_started"><img src="{{$staff_image_4}}" alt="" width="246" height="190"></a></div>
+                            <div class="team-boxed-caption text-center">
+                                <div class="team-boxed-title font-weight-bold"><a href="/get_started">{{.Get `section_8_nameRight`}}</a></div>
+                                <p class="position">{{.Get `section_8_titleRight`}}</p>
+                                <ul class="team_expert mt-20 list-inline-reset">
+                                    <li><a class="novi-icon icon icon-round icon-pciked-bluewood icon-xxs-smallest fa fa-facebook" href="/get_started"></a></li>
+                                    <li><a class="novi-icon icon icon-round icon-pciked-bluewood icon-xxs-smallest fa fa-twitter" href="/get_started"></a></li>
+                                    <li><a class="novi-icon icon icon-round icon-pciked-bluewood icon-xxs-smallest fa fa-google-plus" href="/get_started"></a></li>
+                                    <li><a class="novi-icon icon icon-round icon-pciked-bluewood icon-xxs-smallest fa-pinterest-p fa" href="/get_started"></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
